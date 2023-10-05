@@ -3,5 +3,10 @@
 {% block title %}首頁{% endblock %}
 {% block content %} 
 <h1>首頁</h1>
+<ul>
+    {% for item in names %}
+    <li>({ item })</li>
+    {% endfor %}
+</ul>
 {{names}}
 {% endblock %}
